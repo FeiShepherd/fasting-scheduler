@@ -1,0 +1,32 @@
+
+body {
+    /* font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif; */
+    font-family: Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+    font-size: 16px;
+    margin: 0; padding: 0;
+    background: white;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    overscroll-behavior-y: contain;
+    overflow: hidden;
+}
+
+.drawer {
+    background: white;
+}
+
+.full-bg-darks {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.silver {
+    color: #c0c0c0;
+}

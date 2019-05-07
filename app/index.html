@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progressive Web App</title>
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#2E3AA1">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Progressive Web App">
+  <link rel="icon" sizes="192x192" href="images/icons/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/icons/ms-touch-icon-144x144-precomposed.png">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shakrmedia/petal@0.11.1/dist/petal.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/timer.css">
+
+  <!--Heatmap-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+  <!-- import zUIx library (v 0.4.9-54) -->
+  <script src="js/zuix.min.js"></script>
+  <script src="js/zuix-bundler.min.js"></script>
+
+  <!-- main app script -->
+  <script src="index.js" defer></script>
+</head>
+<style>
+.heat-box{
+  width:20px;
+  height:20px;
+  float: left;
+}
+#heatmap{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+</style>
+<body class="dark full-bg-dark">
+  <header data-ui-include="layout/header"
+    data-ui-options="options.headerBar"
+    data-ui-field="header-bar"></header>
+  <main data-ui-field="pages">
+      <div class="content">
+        <div class="timer-background"></div>
+        <div class="timer-container">
+          <div class="radial-timer s-animate">
+              <div class="radial-timer-half"></div>
+              <div class="radial-timer-half"></div>
+          </div>
+          <div class="last-ate">
+              <div>Last Ate:</div>
+              <div id="hours">0</div>
+          </div>
+        </div>
+        <br/>
+        <button class="btn" id="ateButton">I Ate</button>
+        <br/>
+        <br/>
+        <div id="ateContainer"></div>
+      </div>
+  </main>
+  <div id="heatmap">
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

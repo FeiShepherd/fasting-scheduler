@@ -1,0 +1,51 @@
+.content {
+    height: 100%;
+    margin: 0;
+    margin-top: 57px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: serif;
+    font-size: 110%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #434343 0%, black 100%);
+}
+
+.feed-pager {
+    height: 100vh;
+    z-index: 0;
+}
+
+.timer-background {
+    width: 300px;
+    height: 170px;
+    position: absolute;
+    background-color: #202020;
+    top: 73px;
+    left: -100px;
+    border-radius: 60px;
+    box-shadow: inset 0 0 25px #f05a67;
+}
+.timer-container {
+    width:100vw;
+    background-color: #434343;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    box-shadow: inset 0 0 25px #30a4dc;
+}
+
+.cal-container {
+    margin-top: 10px;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+.last-ate {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    color: silver;
+}
